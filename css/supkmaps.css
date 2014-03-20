@@ -1688,9 +1688,12 @@ h1, h2, h3, h4, h5, h6, p { color: #424242; }
 
 .lead { text-align: center; }
 
+#main { padding-top: 40px; margin-top: 20px; border-top: 1px dashed #ff9900; }
+
 #truthtable thead { background-color: #ff9900; }
 #truthtable thead td { font-weight: bold; }
 #truthtable td { font-weight: normal; }
+#truthtable tr td.leftborder { border-left: 2px solid #bcbcbc; }
 
 #kmap { text-align: center; background-color: #bcbcbc; border: 20px solid #bcbcbc; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; line-height: 105px; }
 #kmap .row, #kmap .row:first-child { margin-left: 0; }

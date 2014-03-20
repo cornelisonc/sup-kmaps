@@ -19,6 +19,12 @@ h1, h2, h3, h4, h5, h6, p {
     text-align: center;
 }
 
+#main {
+    padding-top: 40px;
+    margin-top: 20px;
+    border-top: 1px dashed $accentColor;
+}
+
 #truthtable {
 
     thead {
@@ -32,6 +38,10 @@ h1, h2, h3, h4, h5, h6, p {
 
     td {
         font-weight: normal;
+    }
+
+    tr td.leftborder {
+        border-left: 2px solid $midColor;
     }
 }
 
