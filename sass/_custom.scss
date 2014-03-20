@@ -1,6 +1,7 @@
 $accentColor: #FF9900;
 $textColor:   #424242;
 $lightColor: #E9E9E9;
+$midColor: #BCBCBC;
 
 @import "compass/layout/sticky-footer";
 
@@ -37,6 +38,10 @@ h1, h2, h3, h4, h5, h6, p {
 #kmap {
 
     text-align: center;
+    background-color: $midColor;
+    border: 20px solid $midColor;
+    @include border-radius(10px);
+    line-height: 105px;
 
     .row, .row:first-child {
         margin-left: 0;
@@ -46,8 +51,9 @@ h1, h2, h3, h4, h5, h6, p {
         font-weight: normal;
         border: 1px solid $lightColor;
         margin: 0;
-        width: 25%;
-        height: auto;
+        width: 105px;
+        height: 105px;
+        background-color: white;
     }
 }
 
