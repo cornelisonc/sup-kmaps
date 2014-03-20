@@ -1,1 +1,22 @@
-// Your custom SCSS should be written here...
+@import "compass/layout/sticky-footer";
+
+html {
+    @include sticky-footer(140px, "#main", "#footer", ".row");
+}
+
+.lead {
+    text-align: center;
+}
+
+#footer {
+    background-color: #eee;
+
+    p {
+        font-size: 80%;
+        line-height: 80%;
+    }
+
+    .columns {
+        padding-top: 40px;
+    }
+}
