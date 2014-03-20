@@ -1682,13 +1682,20 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 
 .ie9 .radio.checked i, .ie9 .checkbox.checked i { top: 0; }
 
-html html, html body { height: 100%; }
-html #main { clear: both; min-height: 100%; height: auto !important; height: 100%; margin-bottom: -140px; }
-html #main #footer { height: 140px; }
-html .row { clear: both; position: relative; height: 140px; }
+html, body { display: table; height: 100%; width: 100%; }
+
+h1, h2, h3, h4, h5, h6, p { color: #424242; }
 
 .lead { text-align: center; }
 
-#footer { background-color: #eee; }
+#truthtable thead { background-color: #ff9900; }
+#truthtable thead td { font-weight: bold; }
+#truthtable td { font-weight: normal; }
+
+#kmap { text-align: center; }
+#kmap .row, #kmap .row:first-child { margin-left: 0; }
+#kmap .cell { font-weight: normal; border: 1px solid #e9e9e9; margin: 0; width: 25%; height: auto; }
+
+#footer { background-color: #eee; display: table-row; height: 1px; width: 100%; }
 #footer p { font-size: 80%; line-height: 80%; }
-#footer .columns { padding-top: 40px; }
+#footer .columns { padding-top: 20px; }

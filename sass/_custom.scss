@@ -1,15 +1,61 @@
+$accentColor: #FF9900;
+$textColor:   #424242;
+$lightColor: #E9E9E9;
+
 @import "compass/layout/sticky-footer";
 
-html {
-    @include sticky-footer(140px, "#main", "#footer", ".row");
+html, body {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: $textColor;
 }
 
 .lead {
     text-align: center;
 }
 
+#truthtable {
+
+    thead {
+        background-color: $accentColor;
+
+        td {
+            font-weight: bold;
+        }
+
+    }
+
+    td {
+        font-weight: normal;
+    }
+}
+
+#kmap {
+
+    text-align: center;
+
+    .row, .row:first-child {
+        margin-left: 0;
+    }
+
+    .cell {
+        font-weight: normal;
+        border: 1px solid $lightColor;
+        margin: 0;
+        width: 25%;
+        height: auto;
+    }
+}
+
 #footer {
     background-color: #eee;
+    display: table-row;
+    height: 1px;
+    width: 100%;
 
     p {
         font-size: 80%;
@@ -17,6 +63,6 @@ html {
     }
 
     .columns {
-        padding-top: 40px;
+        padding-top: 20px;
     }
 }
