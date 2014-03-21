@@ -51,7 +51,6 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: $midColor;
     border: 20px solid $midColor;
     @include border-radius(10px);
-    line-height: 105px;
 
     .row, .row:first-child {
         margin-left: 0;
@@ -64,6 +63,10 @@ h1, h2, h3, h4, h5, h6, p {
         width: 105px;
         height: 105px;
         background-color: white;
+    }
+
+    .cell p {
+        line-height: 105px;
     }
 }
 
