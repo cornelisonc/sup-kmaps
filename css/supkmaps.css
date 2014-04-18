@@ -1697,8 +1697,14 @@ h1, h2, h3, h4, h5, h6, p { color: #424242; }
 
 #kmap { text-align: center; background-color: #bcbcbc; border: 20px solid #bcbcbc; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; }
 #kmap .row, #kmap .row:first-child { margin-left: 0; }
-#kmap .cell { font-weight: normal; border: 1px solid #e9e9e9; margin: 0; width: 105px; height: 105px; background-color: white; }
+#kmap .cell { font-weight: normal; margin: 0; width: 105px; height: 105px; background-color: white; }
 #kmap .cell p { line-height: 105px; }
+#kmap .highlight, #kmap .top, #kmap .bottom, #kmap .right, #kmap .left { background-color: rgba(50, 153, 187, 0.5); }
+#kmap .highlight-double { background-color: #3299bb; }
+#kmap .top { -webkit-border-radius: 40px 40px 0 0; -moz-border-radius: 40px 40px 0 0; -ms-border-radius: 40px 40px 0 0; -o-border-radius: 40px 40px 0 0; border-radius: 40px 40px 0 0; }
+#kmap .bottom { -webkit-border-radius: 0 0 40px 40px; -moz-border-radius: 0 0 40px 40px; -ms-border-radius: 0 0 40px 40px; -o-border-radius: 0 0 40px 40px; border-radius: 0 0 40px 40px; }
+#kmap .right { -webkit-border-radius: 0 40px 40px 0; -moz-border-radius: 0 40px 40px 0; -ms-border-radius: 0 40px 40px 0; -o-border-radius: 0 40px 40px 0; border-radius: 0 40px 40px 0; }
+#kmap .left { -webkit-border-radius: 40px 0 0 40px; -moz-border-radius: 40px 0 0 40px; -ms-border-radius: 40px 0 0 40px; -o-border-radius: 40px 0 0 40px; border-radius: 40px 0 0 40px; }
 
 #footer { background-color: #eee; display: table-row; height: 1px; width: 100%; }
 #footer p { font-size: 80%; line-height: 80%; }

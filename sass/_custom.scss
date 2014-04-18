@@ -1,4 +1,5 @@
 $accentColor: #FF9900;
+$otherAccentColor: #3299BB;
 $textColor:   #424242;
 $lightColor: #E9E9E9;
 $midColor: #BCBCBC;
@@ -58,7 +59,6 @@ h1, h2, h3, h4, h5, h6, p {
 
     .cell {
         font-weight: normal;
-        border: 1px solid $lightColor;
         margin: 0;
         width: 105px;
         height: 105px;
@@ -67,7 +67,37 @@ h1, h2, h3, h4, h5, h6, p {
 
     .cell p {
         line-height: 105px;
+
     }
+
+    .highlight {
+        background-color: rgba($otherAccentColor, .5);
+    }
+
+    .highlight-double {
+        background-color: $otherAccentColor;
+    }
+
+    .top {
+        @extend .highlight;
+        @include border-radius(40px 40px 0 0);
+   }
+
+    .bottom {
+        @extend .highlight;
+        @include border-radius(0 0 40px 40px);
+   }
+
+    .right {
+        @extend .highlight;
+        @include border-radius(0 40px 40px 0);
+   }
+
+   .left {
+        @extend .highlight;
+        @include border-radius(40px 0 0 40px);
+   }
+
 }
 
 #footer {
@@ -79,6 +109,7 @@ h1, h2, h3, h4, h5, h6, p {
     p {
         font-size: 80%;
         line-height: 80%;
+
     }
 
     .columns {
