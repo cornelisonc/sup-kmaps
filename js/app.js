@@ -24,6 +24,13 @@ function populateKmap($termArray) {
     });
 
     highlightKmap();
+    populateTruthTable($termArray);
+}
+
+function populateTruthTable($termArray) {
+    $.each($termArray, function( index, value ) {
+        $("#term-" + index).text(value);
+    });
 }
 
 function highlightKmap() {
