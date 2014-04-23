@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    var $minterms = ['1', '5', '11', '13'];
+    var $minterms = ['1', '4', '5', '6', '7', '11', '13'];
     $termArray = getMinterms($minterms);
     populateKmap($termArray);
 });
