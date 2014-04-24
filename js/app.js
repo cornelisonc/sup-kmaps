@@ -1,7 +1,8 @@
 $( document ).ready(function() {
-    var $minterms = ['1', '4', '5', '6', '7', '11', '13'];
+    var $minterms = ['1', '4', '5', '6', '7', '11', '13', '14'];
     $termArray = getMinterms($minterms);
     populateKmap($termArray);
+    populateTerms($termArray);
 });
 
 function getMinterms($testminterms) {
@@ -44,6 +45,31 @@ function highlightKmap() {
             }
         }
     });
+}
+
+function populateTerms($termArray) {
+
+    var $mintermString = '';
+    var $maxtermString = '';
+
+    $.each($termArray, function( index, value ) {
+        if (value == 1) {
+            $mintermString += index + ', ';
+        } else {
+            $maxtermString += index + ', ';
+        }
+    });
+
+    console.log($mintermString);
+
+    $mintermString = $mintermString.substr(0, $mintermString.length-2);
+    $maxtermString = $maxtermString.substr(0, $maxtermString.length-2);
+
+    console.log($mintermString);
+
+    $("#minterms").append($mintermString);
+    $("#maxterms").append($maxtermString);
+
 }
 
 //
