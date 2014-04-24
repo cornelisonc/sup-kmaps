@@ -1,1 +1,118 @@
-// Your custom SCSS should be written here...
+$accentColor: #FF9900;
+$otherAccentColor: #3299BB;
+$textColor:   #424242;
+$lightColor: #E9E9E9;
+$midColor: #BCBCBC;
+
+@import "compass/layout/sticky-footer";
+
+html, body {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: $textColor;
+}
+
+.lead {
+    text-align: center;
+}
+
+#main {
+    padding-top: 40px;
+    margin-top: 20px;
+    border-top: 1px dashed $accentColor;
+}
+
+#truthtable {
+
+    thead {
+        background-color: $accentColor;
+
+        td {
+            font-weight: bold;
+        }
+
+    }
+
+    td {
+        font-weight: normal;
+    }
+
+    tr td.leftborder {
+        border-left: 2px solid $midColor;
+    }
+}
+
+#kmap {
+
+    text-align: center;
+    background-color: $midColor;
+    border: 20px solid $midColor;
+    @include border-radius(10px);
+
+    .row, .row:first-child {
+        margin-left: 0;
+    }
+
+    .cell {
+        font-weight: normal;
+        margin: 0;
+        width: 105px;
+        height: 105px;
+        background-color: white;
+    }
+
+    .cell p {
+        line-height: 105px;
+
+    }
+
+    .highlight {
+        background-color: rgba($otherAccentColor, .5);
+    }
+
+    .highlight-double {
+        background-color: $otherAccentColor;
+    }
+
+    .top {
+        @extend .highlight;
+        @include border-radius(40px 40px 0 0);
+   }
+
+    .bottom {
+        @extend .highlight;
+        @include border-radius(0 0 40px 40px);
+   }
+
+    .right {
+        @extend .highlight;
+        @include border-radius(0 40px 40px 0);
+   }
+
+   .left {
+        @extend .highlight;
+        @include border-radius(40px 0 0 40px);
+   }
+
+}
+
+#footer {
+    background-color: #eee;
+    display: table-row;
+    height: 1px;
+    width: 100%;
+
+    p {
+        font-size: 80%;
+        line-height: 80%;
+
+    }
+
+    .columns {
+        padding-top: 20px;
+    }
+}
